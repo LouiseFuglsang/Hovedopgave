@@ -1,0 +1,21 @@
+body {
+    background-color: #B2D4D0;
+}
+
+a {
+    display: block;
+    color: #000000;
+    font-family: "Tahoma";
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    display: inline-block;
+    float: none;
+}
+
+
+.box {
+    background-color: #000;
+    color: #fff;
+    opacity: .5;
+}
