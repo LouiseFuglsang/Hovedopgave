@@ -74,35 +74,50 @@
 
 
 
-<!-- Semi-transparent box -->
-    <div class="box">
-        Din store fest tilbyder forskellige hjælpeværktøjer til bryllupsplanlægningen <br>
-        der gør det hele sjovere, nemmere, mere <br>
-        tidsbesparende samt mere overskueligt uden at overvælde dig.<br><br>
-
-        Hos din store fest:<br>
-        - får du et samlet overblik.<br>
-        - er det lettere for dig at træffe beslutninger.<br>
-        - får du leverandører af en høj kvalitet.<br>
-        - er det sjovt og nemt at planlægge din dag.<br>
-        - kan du visualisere din dag.<br><br>
-
-        Kom i gang nu, med en profil <a href="createProfile.html">her</a>
-        <br><br>
-    </div>
 
 
-<!-- Baggrundsbillede -->
-    <img src="images/BrideGroom.png" class="brideGroom" alt="Billede af brudepar">
+        <!-- Baggrundsbillede -->
+        <div class="brideGroomDiv">
+            <img src="images/BrideGroom.png" class="brideGroom" alt="Billede af brudepar">
+
+
+        <div class="overlay">
+
+
+            <!-- Semi-transparent box -->
+            <div class="box">
+            <p>
+                <b> Din store fest</b> tilbyder forskellige hjælpeværktøjer til bryllupsplanlægningen <br>
+            der gør det hele sjovere, nemmere, mere <br>
+            tidsbesparende samt mere overskueligt uden at overvælde dig.<br><br>
+
+            <b>Hos din store fest:</b><br>
+            - får du et samlet overblik.<br>
+            - er det lettere for dig at træffe beslutninger.<br>
+            - får du leverandører af en høj kvalitet.<br>
+            - er det sjovt og nemt at planlægge din dag.<br>
+            - kan du visualisere din dag.<br><br>
+
+            Kom i gang nu, med en profil <a class="her" href="createProfile.html">her</a>
+
+            <br><br>
+            </p>
+
+        </div>
+        </div>
+        </div>
+
+
+
 
 
 <!-- Tilmeld nyhedsbrev -->
     <p class="marketing">Få gode tilbud og nyheder</p>
 
-    <form id="subscribe" action="/action_page.html">
-        <input type="text" id="name" name="name" value="Dit navn"><br>
-        <input type="email" id="email" name="email" value="Din email"><br><br>
-        <input type="submit" value="Tilmeld">
+    <form class="subscribeForm" id="subscribe" action="/action_page.html">
+        <input class="userInputName" type="text" id="name" name="name" value="Dit navn"><br><br>
+        <input class="userInputEmail" type="email" id="email" name="email" value="Din email"><br><br>
+        <input class="submit" type="submit" value="Tilmeld">
     </form>
 
 
@@ -110,7 +125,7 @@
 <!-- Footer -->
 
     <footer>
-        <ul class="bottom1">
+        <ul class="bottom1a">
             <li class="bottom1"><a href="#">Annoncér</a></li>
             <li class="bottom1"><a href="#">Handelsbetingelser</a></li>
             <li class="bottom1"><a href="#">Om os</a></li>
@@ -122,12 +137,11 @@
 
     <hr>
 
-        <ul class="bottom2">
-            <ul class="bottom2">
-                <li class="bottom2"><a href="#">Din store fest © copyright 2022</a></li>
-                <li class="bottom2"><a href="#">Privatlivspolitik</a></li>
-                <li class="bottom2"><a href="#">Persondatapolitik</a></li>
-                <li class="bottom2"><a href="#">CVR 12345678</a></li>
+        <ul class="bottom2a">
+            <li class="bottom2"><a href="#">Din store fest © copyright 2022</a></li>
+            <li class="bottom2"><a href="#">Privatlivspolitik</a></li>
+            <li class="bottom2"><a href="#">Persondatapolitik</a></li>
+            <li class="bottom2"><a href="#">CVR 12345678</a></li>
 
             <li class="bottom2"><img src="images/Facebook.png" alt="Facebook logo"></li>
             <li class="bottom2"><img src="images/Instagram.png" alt="Instagram logo"></li>
@@ -135,7 +149,6 @@
             <li class="bottom2"><img src="images/TikTok.png" alt="TikTok logo"></li>
 
             <li class="bottom2"><img src="images/Youtube.png" alt="Youtube logo"></li>
-            </ul>
         </ul>
 
     </footer>

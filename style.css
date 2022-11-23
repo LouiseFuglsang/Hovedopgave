@@ -19,20 +19,63 @@ body {
 
 a {
     display: block;
-    color: #000000;
-    font-family: "Tahoma";
+    font-family: "Arial";
     text-align: center;
     padding: 16px;
     text-decoration: none;
     display: inline-block;
-    float: none;
+    color: black;
+
+}
+
+p {
+    font-family: "Arial";
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: normal;
+    color: black;
 }
 
 
+b {
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+.her {
+    color: white;
+}
+
+
+
+brideGroomDiv {
+    position: relative;
+    width: 400px;
+    height: 200px;
+}
+
+.overlay {
+    position: absolute;
+    background-color: #0005;
+    top: 600px;
+    left: 500px;
+    width: 500px;
+    height: 653px;}
+
+
 .box {
-    background-color: #000;
-    color: #fff;
+
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    height: 653px;
+    background-color: white;
     opacity: .5;
+
+    display: flex;
+    justify-content: center;
+    margin: auto;
+
 }
 
 .navBar {
@@ -105,17 +148,85 @@ button {
 }
 
 .marketing {
-    font-family: "arial";
+    font-family: "Arial";
     font-size: 30px;
     font-weight: bold;
     color: #DB6481;
 }
 
-.bottom1 {
+
+.subscribeForm {
+    padding-left: 27px;
+}
+
+
+.userInputName {
+    color: grey;
+    background-color: white;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 56px;
+    padding-top: 7px;
+    padding-left: 56px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+.userInputEmail {
+    color: grey;
+    background-color: white;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 56px;
+    padding-top: 7px;
+    padding-left: 56px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+
+.submit {
+    color: white;
+    background-color: #DB6481;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 135px;
+    padding-top: 7px;
+    padding-left: 135px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 8px;
 
 }
 
 
-.bottom2 {
+.bottom1 {
+    font-size: 20px;
+}
 
+.bottom1a li {
+    display: inline-block;
+    float: none;
+}
+
+.bottom2 {
+    font-size: 16px;
+}
+
+.bottom2a li {
+    display: inline-block;
+    float: none;
+}
+
+
+hr {
+    border-top: white;
 }
