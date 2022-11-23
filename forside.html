@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Din store fest</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+
+<!-- Logo -->
+<img src="images/Logo.png" class="logo" alt="Din store fest logo">
+
+
+<!-- Menu -->
+    <nav class="navBar">
+        <a href="forside.html">Brudeparret</a>
+        <a href="gaester.html">Gæster</a>
+        <a href="leverandoerer.html">Leverandører</a>
+        <a href="inspiration.html">Inspiration</a>
+        <a href="anmeldelser.html">Anmeldelser</a>
+        <a href="shop.html">Shop</a>
+    </nav>
+
+
+<!-- Log ind og Opret profil -->
+    <div class="signIn">
+        <a href="signIn" target="signin.html">Log ind</a>
+    </div>
+
+    <div class="createProfile">
+        <a href="createProfile" target="createProfile.html">Opret profil</a>
+    </div>
+
+
+<!-- Søgefelt -->
+<form id="search">
+    <label>Search field: <input type="text" /></label>
+    <br /><br />
+    <button type="submit">Submit form</button>
+</form>
+
+
+
+
+<form action="/search" method="post">
+
+    <div>
+
+        <div class="person">
+
+            <input type="text" id="searchField" name="search" value="Dit navn"><br>
+            <input type="submit" value="Søg">
+            <br>
+
+        </div>
+
+        <br><br>
+
+        <br>
+
+        <button type="submit">Indsend</button>
+    </div>
+
+</form>
+
+    <img src="images/Magnefier.png" class="magnefier" alt="søgefelt ikon">
+
+
+
+<!-- Semi-transparent box -->
+    <div class="box">
+        Din store fest tilbyder forskellige hjælpeværktøjer til bryllupsplanlægningen <br>
+        der gør det hele sjovere, nemmere, mere <br>
+        tidsbesparende samt mere overskueligt uden at overvælde dig.<br><br>
+
+        Hos din store fest:<br>
+        - får du et samlet overblik.<br>
+        - er det lettere for dig at træffe beslutninger.<br>
+        - får du leverandører af en høj kvalitet.<br>
+        - er det sjovt og nemt at planlægge din dag.<br>
+        - kan du visualisere din dag.<br><br>
+
+        Kom i gang nu, med en profil <a href="createProfile.html">her</a>
+        <br><br>
+    </div>
+
+
+<!-- Baggrundsbillede -->
+    <img src="images/BrideGroom.png" class="brideGroom" alt="Billede af brudepar">
+
+
+<!-- Tilmeld nyhedsbrev -->
+    <p>Få gode tilbud og nyheder</p>
+
+    <form id="subscribe" action="/action_page.html">
+        <input type="text" id="name" name="name" value="Dit navn"><br>
+        <input type="email" id="email" name="email" value="Din email"><br><br>
+        <input type="submit" value="Tilmeld">
+    </form>
+
+
+
+<!-- Footer -->
+
+    <footer>
+        <ul class="bottom1">
+            <li class="bottom1"><a href="#">Annoncér</a></li>
+            <li class="bottom1"><a href="#">Handelsbetingelser</a></li>
+            <li class="bottom1"><a href="#">Om os</a></li>
+            <li class="bottom1"><a href="#">Kontakt os</a></li>
+            <li class="bottom1"><a href="#">Nyhedsbrev</a></li>
+            <li class="bottom1"><a href="#">FAQ</a></li>
+        </ul>
+
+
+    <hr>
+
+        <ul class="bottom2">
+            <ul class="bottom2">
+                <li class="bottom2"><a href="#">Din store fest © copyright 2022</a></li>
+                <li class="bottom2"><a href="#">Privatlivspolitik</a></li>
+                <li class="bottom2"><a href="#">Persondatapolitik</a></li>
+                <li class="bottom2"><a href="#">CVR 12345678</a></li>
+
+            <li class="bottom2"><img src="images/Facebook.png" alt="Facebook logo"></li>
+            <li class="bottom2"><img src="images/Instagram.png" alt="Instagram logo"></li>
+            <li class="bottom2"><img src="images/Pinterest.png" alt="Pinterest logo"></li>
+            <li class="bottom2"><img src="images/TikTok.png" alt="TikTok logo"></li>
+
+            <li class="bottom2"><img src="images/Youtube.png" alt="Youtube logo"></li>
+            </ul>
+        </ul>
+
+    </footer>
+</body>
+</html>

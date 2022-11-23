@@ -2,6 +2,21 @@ body {
     background-color: #B2D4D0;
 }
 
+.logo { width: 175px;
+
+}
+
+
+.magnefier {
+
+}
+
+
+.brideGroom {
+
+}
+
+
 a {
     display: block;
     color: #000000;
@@ -18,4 +33,42 @@ a {
     background-color: #000;
     color: #fff;
     opacity: .5;
+}
+
+.navBar {
+    padding-left: 333px;
+    font:"Britannic Bold";
+
+}
+
+.signIn {
+
+}
+
+
+.createProfile {
+
+}
+
+
+.search {
+
+}
+
+button {
+
+}
+
+.subscribe {
+
+}
+
+
+.bottom1 {
+
+}
+
+
+.bottom2 {
+
 }
