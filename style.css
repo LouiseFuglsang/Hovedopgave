@@ -2,13 +2,13 @@ body {
     background-color: #B2D4D0;
 }
 
-.logo { width: 175px;
-
+.logo {
+    width: 175px;
 }
 
 
 .magnefier {
-
+    width: 30px;
 }
 
 
@@ -37,16 +37,57 @@ a {
 
 .navBar {
     padding-left: 333px;
-    font:"Britannic Bold";
-
 }
+
+
+@font-face{
+    font-family: britannic;
+    src:url("https://www.dafontfree.net/data/13/b/64530/BRITANIC.TTF");
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+a.menu {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
 
 .signIn {
+    float: right;
+    padding-right: 210px;
+}
+
+.signInText {
+    color: #DB6481;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+}
+
+.createProfileDiv{
 
 }
 
-
 .createProfile {
+    float: right;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #DB6481;
+    padding-right: 20px;
+    padding-top: 14px;
+    padding-left: 20px;
+    padding-bottom: 14px;
+    border: none;
+    border-radius: 28px;
+    position: absolute;
+    top: 0;
 
 }
 
@@ -63,6 +104,12 @@ button {
 
 }
 
+.marketing {
+    font-family: "arial";
+    font-size: 30px;
+    font-weight: bold;
+    color: #DB6481;
+}
 
 .bottom1 {
 

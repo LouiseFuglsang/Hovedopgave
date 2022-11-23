@@ -4,34 +4,39 @@
     <meta charset="UTF-8">
     <title>Din store fest</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
-
 </head>
 <body>
 
 
 <!-- Logo -->
-<img src="images/Logo.png" class="logo" alt="Din store fest logo">
+    <img src="images/Logo.png" class="logo" alt="Din store fest logo">
 
-
-<!-- Menu -->
-    <nav class="navBar">
-        <a href="forside.html">Brudeparret</a>
-        <a href="gaester.html">Gæster</a>
-        <a href="leverandoerer.html">Leverandører</a>
-        <a href="inspiration.html">Inspiration</a>
-        <a href="anmeldelser.html">Anmeldelser</a>
-        <a href="shop.html">Shop</a>
-    </nav>
 
 
 <!-- Log ind og Opret profil -->
     <div class="signIn">
-        <a href="signIn" target="signin.html">Log ind</a>
+        <a class="signInText" href="signIn.html">Log ind</a>
     </div>
 
-    <div class="createProfile">
-        <a href="createProfile" target="createProfile.html">Opret profil</a>
+    <div class="createProfileDiv">
+        <p><button class="createProfile">Opret profil</button></p>
     </div>
+
+
+<br><br><br>
+
+
+<!-- Menu -->
+    <nav class="navBar">
+        <a class="menu" href="forside.html">Brudeparret</a>
+        <a class="menu" href="gaester.html">Gæster</a>
+        <a class="menu" href="leverandoerer.html">Leverandører</a>
+        <a class="menu" href="inspiration.html">Inspiration</a>
+        <a class="menu" href="anmeldelser.html">Anmeldelser</a>
+        <a class="menu" href="shop.html">Shop</a>
+    </nav>
+
+
 
 
 <!-- Søgefelt -->
@@ -92,7 +97,7 @@
 
 
 <!-- Tilmeld nyhedsbrev -->
-    <p>Få gode tilbud og nyheder</p>
+    <p class="marketing">Få gode tilbud og nyheder</p>
 
     <form id="subscribe" action="/action_page.html">
         <input type="text" id="name" name="name" value="Dit navn"><br>
