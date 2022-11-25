@@ -90,9 +90,6 @@ brideGroomDiv {
 }
 
 
-.menu:hover {
-    background-color: #0099cc;
-}
 
 
 @font-face{
@@ -103,11 +100,100 @@ brideGroomDiv {
 }
 
 
-a.menu {
+a.menuForside {
     font-family: "Britannic";
     font-size: 18px;
     font-weight: bold;
     color: white;
+
+}
+
+a.menuGaester {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+a.menuLeverandoerer {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+a.menuAnmeldelser {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+a.menuInspiration {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+a.menuShop {
+    font-family: "Britannic";
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+.menuForside:hover {
+    color: #FBE5C8;
+}
+
+.hoverForside {
+    display: inline-block;
+    position: relative;
+}
+
+.hoverForside a {
+    display: inline-block;
+    position: relative;
+}
+
+.hovermenu:hover .hoverForside {
+    display: block;
+}
+
+
+
+.menuGaester:hover {
+    color: #FBE5C8;
+}
+
+
+.menuLeverandoerer:hover {
+    color: #FBE5C8;
+}
+
+
+.menuInspiration:hover {
+    color: #FBE5C8;
+}
+
+
+.menuAnmeldelser:hover {
+    color: #FBE5C8;
+}
+
+
+.menuShop:hover {
+    color: #FBE5C8;
 }
 
 
