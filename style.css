@@ -106,6 +106,7 @@ a.menuForside {
     font-weight: bold;
     color: white;
 
+
 }
 
 a.menuGaester {
@@ -151,24 +152,37 @@ a.menuShop {
 
 
 
-
 .menuForside:hover {
     color: #FBE5C8;
 }
 
 .hoverForside {
-    display: inline-block;
+    display: block;
     position: relative;
 }
 
 .hoverForside a {
-    display: inline-block;
+    display: block;
     position: relative;
 }
 
-.hovermenu:hover .hoverForside {
-    display: block;
+
+.ForsideSubmenu1 {
+    display:inline-block;
+    position: relative;
 }
+
+.ForsideSubmenu2 {
+    display:inline-block;
+    position: relative;
+}
+
+.ForsideSubmenu3 {
+    display:inline-block;
+    position: relative;
+}
+
+
 
 
 
@@ -308,9 +322,15 @@ button {
 
 .bottom1 {
     font-size: 20px;
+
 }
 
-.bottom1a li {
+.bottom1a {
+    float: right;
+}
+
+
+.bottom1a li{
     display: inline-block;
     float: none;
 }
@@ -318,6 +338,11 @@ button {
 .bottom2 {
     font-size: 16px;
 }
+
+.bottom2a {
+    float: left;
+}
+
 
 .bottom2a li {
     display: inline-block;
@@ -327,4 +352,8 @@ button {
 
 hr {
     border-top: white;
+}
+
+footer {
+    width: 800px;
 }
