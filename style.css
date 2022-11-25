@@ -1,5 +1,12 @@
 body {
     background-color: #B2D4D0;
+
+}
+
+
+.container {
+    width: 100%;
+    margin: auto;
 }
 
 .logo {
@@ -59,16 +66,16 @@ brideGroomDiv {
     background-color: #0005;
     top: 600px;
     left: 500px;
-    width: 500px;
-    height: 653px;}
+    width: 700px;
+    height: 550px;}
 
 
 .box {
 
-    top: 50px;
-    left: 50px;
-    width: 500px;
-    height: 653px;
+    top: 25%;
+    left: 25px;
+    width: 700px;
+    height: 550px;
     background-color: white;
     opacity: .5;
 
