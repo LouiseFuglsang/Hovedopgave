@@ -49,7 +49,7 @@ b {
     font-weight: bold;
 }
 
-.her {
+.createProfileHere {
     color: white;
 }
 
@@ -85,10 +85,6 @@ brideGroomDiv {
 
 }
 
-.navBar {
-    padding-left: 333px;
-}
-
 
 
 
@@ -97,117 +93,6 @@ brideGroomDiv {
     src:url("https://www.dafontfree.net/data/13/b/64530/BRITANIC.TTF");
     font-weight: bold;
     font-size: 18px;
-}
-
-
-a.menuForside {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-
-
-}
-
-a.menuGaester {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-a.menuLeverandoerer {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-a.menuAnmeldelser {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-a.menuInspiration {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-
-a.menuShop {
-    font-family: "Britannic";
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-
-
-
-
-
-
-
-.menuForside:hover {
-    color: #FBE5C8;
-}
-
-.hoverForside {
-    display: block;
-    position: relative;
-}
-
-.hoverForside a {
-    display: block;
-    position: relative;
-}
-
-
-.ForsideSubmenu1 {
-    display:inline-block;
-    position: relative;
-}
-
-.ForsideSubmenu2 {
-    display:inline-block;
-    position: relative;
-}
-
-.ForsideSubmenu3 {
-    display:inline-block;
-    position: relative;
-}
-
-
-
-
-
-.menuGaester:hover {
-    color: #FBE5C8;
-}
-
-
-.menuLeverandoerer:hover {
-    color: #FBE5C8;
-}
-
-
-.menuInspiration:hover {
-    color: #FBE5C8;
-}
-
-
-.menuAnmeldelser:hover {
-    color: #FBE5C8;
-}
-
-
-.menuShop:hover {
-    color: #FBE5C8;
 }
 
 
@@ -254,6 +139,99 @@ a.menuShop {
 button {
 
 }
+
+
+
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #B2D4D0;
+    font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-family: Britannic;
+    font-size: 25px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #B2D4D0;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #B2D4D0;;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 23%;
+    padding: 10px;
+    background-color: #B2D4D0;
+    height: 250px;
+}
+
+/* Style links inside the columns */
+.column a {
+    float: none;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+    background-color: #B2D4D0;
+}
+
+
+
+
+
+
+
+
+
 
 .subscribe {
 
