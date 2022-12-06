@@ -309,8 +309,8 @@ button {
 
 }
 
-.bottom1a {
-    float: right;
+footer .bottom1a {
+    text-align: right;
 }
 
 
@@ -323,9 +323,10 @@ button {
     font-size: 16px;
 }
 
-.bottom2a {
-    float: left;
+footer .bottom2a {
+    text-align: right;
 }
+
 
 
 .bottom2a li {
@@ -339,6 +340,6 @@ hr {
 }
 
 footer {
-    height: 300px;
+    height: auto;
     max-width: 100%;
 }
