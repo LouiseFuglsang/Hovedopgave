@@ -4,9 +4,9 @@ body {
 }
 
 
-.container {
+.websideContainer {
     width: 1280px;
-    margin: auto;
+    margin-right: 200px;
 }
 
 .logo {
@@ -124,7 +124,7 @@ brideGroomDiv {
     padding-bottom: 14px;
     border: none;
     border-radius: 28px;
-    position: absolute;
+    position: relative;
     top: 0;
 
 }
