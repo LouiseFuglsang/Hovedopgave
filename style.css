@@ -14,9 +14,7 @@ body {
 }
 
 
-.magnefier {
-    width: 30px;
-}
+
 
 
 .brideGroom {
@@ -111,7 +109,7 @@ brideGroomDiv {
 }
 
 .createProfileDiv{
-
+    float: right;
 }
 
 .createProfile {
@@ -132,9 +130,6 @@ brideGroomDiv {
 }
 
 
-.search {
-
-}
 
 button {
 
@@ -226,9 +221,26 @@ button {
 
 
 
+.searchfield {
+    float: right;
+}
 
 
+.search {
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: url(images/Magnefier.png) no-repeat left;
+    background-size: 20px;
+    background-color: white;
+    border: none;
+    font-size: 10px;
+}
 
+
+::placeholder {
+    color: #B2D4D0;
+}
 
 
 
