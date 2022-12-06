@@ -339,5 +339,6 @@ hr {
 }
 
 footer {
-    width: 800px;
+    height: 300px;
+    max-width: 100%;
 }
