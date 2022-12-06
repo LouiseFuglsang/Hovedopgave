@@ -1,13 +1,11 @@
 body {
     background-color: #B2D4D0;
+    height: auto;
+    max-width: 100%;
 
 }
 
 
-.websideContainer {
-    width: 1280px;
-    margin-right: 200px;
-}
 
 .logo {
     width: 175px;
@@ -18,7 +16,9 @@ body {
 
 
 .brideGroom {
-    width: 1280px;
+    height: auto;
+    max-width: 100%
+
 }
 
 
@@ -52,12 +52,6 @@ b {
 }
 
 
-
-brideGroomDiv {
-    position: relative;
-    width: 400px;
-    height: 200px;
-}
 
 .overlay {
     position: absolute;
