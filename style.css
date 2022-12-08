@@ -94,21 +94,33 @@ b {
 
 
 
+.createProfileDiv {
+    float: right;
+    position: relative;
+    margin-top: 1.5%;
+    margin-right: 3%;
+
+}
+
+.signIn {
+    float: right;
+    position: relative;
+    margin-top: 2.5%;
+    margin-right: 2%;
+
+}
+
+
 
 
 .signInText {
     color: #DB6481;
     font-size: 16px;
     font-weight: bold;
-    position: absolute;
-    top: 6.5%;
-    right: 9%;
-    margin-right: 5%;
 
 }
 
 .createProfile {
-    float: right;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -119,12 +131,13 @@ b {
     padding-bottom: 11px;
     border: none;
     border-radius: 28px;
-    position: absolute;
-    top: 6.5%;
-    right: 5%;
-
 
 }
+
+
+
+
+
 
 
 
