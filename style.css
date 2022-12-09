@@ -50,6 +50,16 @@ p {
 }
 
 
+
+h2 {
+    font-family: Britannic;
+    font-size: 40px;
+    font-weight: bold;
+    color: #DB6481;
+    text-align: center;
+}
+
+
 b {
     font-family: "Arial";
     font-weight: bold;
@@ -76,8 +86,7 @@ b {
     position: absolute;
     z-index: 1;
     align-items: center;
-    height: auto;
-    max-width: 100%;
+
 
 }
 
@@ -135,10 +144,34 @@ b {
 }
 
 
+.contentSignIn {
+    height: 400px;
+    max-width: 100%;
+    background-color: white;
+}
 
 
+.signInPage {
+    float: right;
+    width: 500px;
+    text-align: center;
+}
 
 
+.leftMenu {
+    float: left;
+    width: 100px;
+}
+
+
+.leftMenuText {
+    padding-left: 30px;
+    font-family: Britannic;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+
+}
 
 
 
@@ -190,6 +223,7 @@ div div div .rabatter {
 /* Add a red background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #B2D4D0;
+    color: #FBE5C8;
 }
 
 /* Dropdown content (hidden by default) */
@@ -210,6 +244,7 @@ div div div .rabatter {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
+
 }
 
 /* Create three equal columns that floats next to each other */
@@ -233,6 +268,7 @@ div div div .rabatter {
 /* Add a background color on hover */
 .column a:hover {
     background-color: #B2D4D0;
+
 }
 
 
@@ -254,6 +290,17 @@ div div div .rabatter {
     text-align: right;
 
 }
+
+
+
+
+
+header .navbar, .dropdown:first-child .dropbtn {
+    color: #FBE5C8;
+
+}
+
+
 
 
 ::placeholder {
@@ -349,6 +396,7 @@ footer .bottom1a {
 
 footer .bottom2a {
     text-align: right;
+
 }
 
 
