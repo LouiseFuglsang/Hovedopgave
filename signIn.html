@@ -40,18 +40,25 @@
 
         <form class="formCreateProfile" action="createProfile.html">
             <br><br>
-            <label for="fname">Brugernavn:</label>
+            <label for="fname">Brugernavn<span>*</span></label>
             <br><br>
-            <input type="text" id="fname" name="fname" value="Brugernavn">
+            <input type="text" id="fname" name="fname" value="Brugernavn*">
             <br><br>
-            <label for="lname">Adgangskode:</label>
+            <label for="lname">Adgangskode<span>*</span></label>
             <br><br>
-            <input type="text" id="lname" name="lname" value="Adgangskode">
+            <input type="text" id="lname" name="lname" value="Adgangskode*">
+            <br>
+            <div class="huskGlemt"><input type="checkbox" id="myCheck" onclick="checkmark()">
+            <p class="huskMig">Husk mig</p>
+            <a class="glemt" href="glemtAdgangskode.html">Glemt adgangskode</a>
+            </div>
             <br><br><br>
+
+
             <input class="submitLogin" type="submit" value="Log ind">
-            <br><br>
-            <p>eller</p>
-            <br><br>
+            <br>
+            <p class="eller">eller</p>
+            <br>
             <input class="submitLogin" type="submit" value="Bliv medlem">
         </form>
 

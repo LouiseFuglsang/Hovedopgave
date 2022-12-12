@@ -159,17 +159,17 @@ b {
 
 
 .formCreateProfile input {
-    color: grey;
+    color: #bdbdbd;
     font-family: "Arial";
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
-    padding-right: 56px;
-    padding-top: 7px;
-    padding-left: 56px;
-    padding-bottom: 7px;
-    border-color: black;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+    border-color: #707070;
     border-width: thin;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .formCreateProfile label {
@@ -179,13 +179,41 @@ b {
     font-weight: bold;
 }
 
+span {
+    color: red;
+}
+
+.glemt {
+    color: #DB6481;
+}
+
+.huskMig {
+    color: #DB6481;
+}
+
+
+.huskGlemt {
+    display: inline-block;
+    float: none;
+    width: 200px;
+}
+
 .submitLogin {
     border: none;
     background-color: #DB6481;
 }
 
+
+.eller {
+    color: #DB6481;
+    font-size: 18px;
+}
+
 .formCreateProfile .submitLogin {
     color: white;
+    font-family: Britannic;
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .leftMenu {
