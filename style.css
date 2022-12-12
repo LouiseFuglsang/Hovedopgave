@@ -56,7 +56,6 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     color: #DB6481;
-    text-align: center;
 }
 
 
@@ -152,13 +151,42 @@ b {
 
 
 .signInPage {
-    float: right;
+    text-align: center;
     max-width: 100%;
-    height: 500px;
+    height: 700px;
     align-content: center;
-    position: relative;
 }
 
+
+.formCreateProfile input {
+    color: grey;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 56px;
+    padding-top: 7px;
+    padding-left: 56px;
+    padding-bottom: 7px;
+    border-color: black;
+    border-width: thin;
+    border-radius: 8px;
+}
+
+.formCreateProfile label {
+    color: black;
+    font-family: "Britannic";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.submitLogin {
+    border: none;
+    background-color: #DB6481;
+}
+
+.formCreateProfile .submitLogin {
+    color: white;
+}
 
 .leftMenu {
     float: left;
@@ -384,9 +412,13 @@ header .navbar, .dropdown:first-child .dropbtn {
 }
 
 footer .bottom1a {
-    text-align: right;
+
 }
 
+
+.bottomFirstLine {
+    text-align: right;
+}
 
 .bottom1a li{
     display: inline-block;
@@ -398,11 +430,13 @@ footer .bottom1a {
 }
 
 footer .bottom2a {
-    text-align: right;
+
 
 }
 
-
+.bottomSecondLine {
+    text-align: right;
+}
 
 .bottom2a li {
     display: inline-block;
@@ -424,26 +458,6 @@ footer {
     font-size: 1.7em;
     line-height: 1.2em;
 }
-
-footer .row {
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-footer .row:first-child {
-     justify-content: end;
- }
-footer .row div {
-    display: inline-block;
-}
-
-footer nav li, .socials li {
-    display: inline-flex;
-    list-style: none;
-}
-
-
-
 
 
 

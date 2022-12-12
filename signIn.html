@@ -38,12 +38,21 @@
     <div class="signInPage">
         <h2>Log ind på din store festside</h2>
 
-        <form action="createProfile.html">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <input type="submit" value="Submit">
+        <form class="formCreateProfile" action="createProfile.html">
+            <br><br>
+            <label for="fname">Brugernavn:</label>
+            <br><br>
+            <input type="text" id="fname" name="fname" value="Brugernavn">
+            <br><br>
+            <label for="lname">Adgangskode:</label>
+            <br><br>
+            <input type="text" id="lname" name="lname" value="Adgangskode">
+            <br><br><br>
+            <input class="submitLogin" type="submit" value="Log ind">
+            <br><br>
+            <p>eller</p>
+            <br><br>
+            <input class="submitLogin" type="submit" value="Bliv medlem">
         </form>
 
     </div>
