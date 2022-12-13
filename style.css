@@ -168,7 +168,7 @@ b {
 }
 
 
-.signInPage {
+.formPage {
     float: right;
     text-align: center;
     width: 86%;
@@ -178,7 +178,7 @@ b {
 }
 
 
-.formCreateProfile input {
+.formCreateForm input {
     color: #bdbdbd;
     font-family: "Arial";
     font-size: 18px;
@@ -194,7 +194,6 @@ b {
 .brugernavn {
     padding-right: 156px;
     padding-left: 30px;
-
 }
 
 .brugernavn[type=text] {
@@ -213,7 +212,17 @@ b {
 }
 
 
-.formCreateProfile label {
+.email {
+    padding-right: 156px;
+    padding-left: 30px;
+}
+
+.email[type=email] {
+    text-align:left;
+}
+
+
+.formCreateForm label {
     color: black;
     font-family: "Britannic";
     font-size: 24px;
@@ -255,7 +264,7 @@ span1 {
     font-size: 18px;
 }
 
-.formCreateProfile .submitLogin {
+.formCreateForm .submitLogin {
     color: white;
     font-family: Britannic;
     font-weight: bold;
@@ -267,7 +276,7 @@ span1 {
 }
 
 
-.formCreateProfile .submitMember {
+.formCreateForm .submitMember {
     color: white;
     font-family: Britannic;
     font-weight: bold;
@@ -278,7 +287,16 @@ span1 {
     padding-left: 48px;
 }
 
-
+.formCreateForm .submitGlemtAdgangskode {
+    color: white;
+    font-family: Britannic;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    background-color: #DB6481;
+    padding-right: 83px;
+    padding-left: 83px;
+}
 
 
 
