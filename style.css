@@ -150,11 +150,31 @@ b {
 }
 
 
+
+.leftMenu {
+    float: left;
+    width: 14%;
+
+}
+
+
+.leftMenuText {
+    padding-left: 30px;
+    font-family: Britannic;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+
+}
+
+
 .signInPage {
+    float: right;
     text-align: center;
-    max-width: 100%;
-    height: 700px;
+    width: 86%;
+    height: 600px;
     align-content: center;
+
 }
 
 
@@ -162,14 +182,36 @@ b {
     color: #bdbdbd;
     font-family: "Arial";
     font-size: 18px;
-    padding-right: 66px;
     padding-top: 10px;
-    padding-left: 100px;
     padding-bottom: 10px;
     border-color: #707070;
     border-width: thin;
     border-radius: 14px;
+    text-align: center;
 }
+
+
+.brugernavn {
+    padding-right: 156px;
+    padding-left: 30px;
+
+}
+
+.brugernavn[type=text] {
+    text-align:left;
+}
+
+
+.adgangskode {
+    padding-right: 156px;
+    padding-left: 30px;
+}
+
+
+.adgangskode[type=text] {
+    text-align:left;
+}
+
 
 .formCreateProfile label {
     color: black;
@@ -220,7 +262,8 @@ span1 {
     font-size: 24px;
     border: none;
     background-color: #DB6481;
-
+    padding-right: 73px;
+    padding-left: 73px;
 }
 
 
@@ -231,25 +274,11 @@ span1 {
     font-size: 24px;
     border: none;
     background-color: #DB6481;
-    padding-left: 44px;
+    padding-right: 48px;
+    padding-left: 48px;
 }
 
 
-
-.leftMenu {
-    float: left;
-    width: 100px;
-}
-
-
-.leftMenuText {
-    padding-left: 30px;
-    font-family: Britannic;
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-
-}
 
 
 
