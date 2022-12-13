@@ -144,7 +144,7 @@ b {
 
 
 .contentSignIn {
-    height: 600px;
+    height: 780px;
     max-width: 100%;
     background-color: white;
 }
@@ -162,14 +162,13 @@ b {
     color: #bdbdbd;
     font-family: "Arial";
     font-size: 18px;
-    font-weight: bold;
-    padding-right: 100px;
+    padding-right: 66px;
     padding-top: 10px;
     padding-left: 100px;
     padding-bottom: 10px;
     border-color: #707070;
     border-width: thin;
-    border-radius: 20px;
+    border-radius: 14px;
 }
 
 .formCreateProfile label {
@@ -177,31 +176,36 @@ b {
     font-family: "Britannic";
     font-size: 24px;
     font-weight: bold;
+
 }
 
 span1 {
     color: red;
 }
 
-.glemt {
-    color: #DB6481;
+
+.checkboxMark {
+    margin-left: 20px;
 }
+
 
 .huskMig {
     color: #DB6481;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-
-.huskGlemt {
-    display: inline-block;
-    float: none;
-    width: 200px;
+.spacing {
+    margin-top: -10px;
 }
 
-.submitLogin {
-    border: none;
-    background-color: #DB6481;
+.glemt {
+    color: #DB6481;
+    padding-left: 194px;
+    font-size: 12px;
 }
+
 
 
 .eller {
@@ -214,7 +218,23 @@ span1 {
     font-family: Britannic;
     font-weight: bold;
     font-size: 24px;
+    border: none;
+    background-color: #DB6481;
+
 }
+
+
+.formCreateProfile .submitMember {
+    color: white;
+    font-family: Britannic;
+    font-weight: bold;
+    font-size: 24px;
+    border: none;
+    background-color: #DB6481;
+    padding-left: 44px;
+}
+
+
 
 .leftMenu {
     float: left;
