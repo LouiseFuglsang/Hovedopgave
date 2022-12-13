@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous">
+  </script>
+
+  <script src="script.js"> </script>
+
+  <title>Vælg en ny adgangskode</title>
+
+  <!-- Importering a Fontawsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" type="text/css" />
+
+  <!-- Custom Css -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+
+<div id="header">
+</div>
+
+<div class="contentPage">
+  <div class="leftMenu">
+    <p class="leftMenuText">
+      Brudeparret
+    </p>
+  </div>
+
+
+  <div class="formPage">
+    <br>
+    <h2>Vælg en ny adgangskode</h2>
+
+    <form class="formCreateForm" action="#">
+      <br>
+      <label for="email">Indtast emailadresse<span1>*</span1></label>
+      <br><br>
+      <input class="email" type="email" id="email" name="email" value="emailadresse*">
+
+      <br> <br> <br>
+
+      <label for="adgangskode">Vælg ny adgangskode<span1>*</span1></label>
+      <br><br>
+      <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" value="Adgangskode*">
+
+      <br> <br> <br>
+
+      <label for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
+      <br><br>
+
+      <input class="adgangskode" type="text" id="adgangskode2" name="adgangskode" value="Adgangskode*">
+      <div class="spacingNewPass"></div>
+
+      <input class="checkboxMarkNewPass" type="checkbox" id="myCheck" onclick="checkmark()">
+      <span class="huskMig">Husk mig</span>
+
+
+      <br> <br> <br>
+
+      <input class="submitGlemtAdgangskode" type="submit" value="Log ind">
+    </form>
+
+  </div>
+
+</div>
+
+
+<div id="footer">
+</div>
+
+
+</body>
+</html>
