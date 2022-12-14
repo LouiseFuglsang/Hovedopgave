@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <script
+              src="https://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous">
+      </script>
+
+      <script src="script.js"> </script>
+
+      <title>Bliv medlem</title>
+
+      <!-- Importering a Fontawsome -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" type="text/css" />
+
+      <!-- Custom Css -->
+      <link href="style.css" rel="stylesheet" type="text/css" />
+
+  </head>
+
+  <body>
+
+      <div id="header">
+      </div>
+
+      <div class="contentPageMember">
+        <div class="leftMenu">
+          <p class="leftMenuText">
+            Brudeparret
+          </p>
+        </div>
+
+
+        <div class="formPageMember">
+          <br><br><br><br><br>
+          <h2 class="blivMedlem">Bliv medlem nu for kun 49 kr/md.</h2>
+          <br>
+          <form class="formCreateFormMember" action="#">
+            <br>
+            <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
+            <br><br>
+            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" value="Brugernavn*">
+
+            <br> <br> <br>
+
+            <label class="labelMember" for="adgangskode">Vælg en adgangskode<span1>*</span1></label>
+            <br><br>
+            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" value="Adgangskode*">
+
+            <br> <br> <br>
+
+            <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
+            <br><br>
+            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskode" value="Bekræft adgangskode*">
+
+            <div class="spacingNewPass"></div>
+
+            <input class="checkboxMarkRemember" type="checkbox" id="myCheck" onclick="checkmark()">
+            <span class="huskMig">Husk mig</span>
+
+
+            <br> <br> <br>
+
+
+
+            <label class="labelMember" for="fuldeNavn">Navn<span1>*</span1></label>
+            <br><br>
+            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" value="Navn*">
+
+            <br><br>
+
+            <label class="labelMember" for="email">E-mail<span1>*</span1></label>
+            <br><br>
+            <input class="email" type="email" id="email" name="email" value="E-mail*">
+
+
+            <br><br><br>
+            <h2>Indtast kortoplysninger</h2>
+
+            <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
+            <br><br>
+            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" value="1234 1234 1234 1234*">
+
+            <br><br>
+
+
+            <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
+            <br><br>
+            <input class="expire" type="text" id="expire" name="expire" value="MM / ÅÅ*">
+
+            <br><br>
+
+            <label class="labelMember" for="kontrolcifre">Kontrolcifre (CVC)<span1>*</span1></label>
+            <br><br>
+            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" value="CVC*">
+
+
+
+            <div class="data">Læs om vores<a class="dataLink" href="#">håndtering af persondata her</a>
+            </div>
+
+            <div class="dataMember">Læs om de<a class="dataMemberLink" href="#">gældende medlemsvilkår for Din store fest her</a>
+            </div>
+
+            <br>
+
+            <input class="checkboxAccept" type="checkbox" id="myCheck2" onclick="checkmark()">
+            <span class="accept">Jeg har læst og accepteret webshoppens Vilkår og betingelser*</span>
+
+
+
+            <br> <br>
+
+            <input class="submitMember49kr" type="submit" value="Bliv medlem 49,- kr.">
+          </form>
+
+        </div>
+
+      </div>
+
+
+      <div id="footer">
+      </div>
+
+
+  </body>
+</html>
