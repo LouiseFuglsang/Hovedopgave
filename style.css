@@ -509,7 +509,7 @@ div div div .rabatter {
     width: calc(100% - 310px);
     border-top: 1px solid white;
     z-index: 3;
-    margin-top: 15px;
+    margin-top: 0px;
 }
 
 
@@ -569,7 +569,6 @@ div div div .rabatter {
 
 
 header .navbar, .dropdown:first-child .dropbtn {
-    color: #FBE5C8;
 }
 
 
