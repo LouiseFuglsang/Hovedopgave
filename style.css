@@ -2,7 +2,6 @@ body {
     background-color: #B2D4D0;
     height: auto;
     max-width: 100%;
-
 }
 
 
@@ -12,7 +11,6 @@ body {
     position: relative;
     top: 20px;
     left: 20px;
-
 }
 
 
@@ -22,11 +20,6 @@ body {
 .brideGroom {
     height: auto;
     max-width: 100%
-
-
-
-
-
 }
 
 
@@ -38,7 +31,6 @@ a {
     text-decoration: none;
     display: inline-block;
     color: black;
-
 }
 
 p {
@@ -85,8 +77,6 @@ b {
     position: absolute;
     z-index: 1;
     align-items: center;
-
-
 }
 
 
@@ -107,7 +97,6 @@ b {
     position: relative;
     margin-top: 1.5vw;
     margin-right: 3vw;
-
 }
 
 .signIn {
@@ -115,7 +104,6 @@ b {
     position: relative;
     margin-top: 2.3vw;
     margin-right: 0.7vw;
-
 }
 
 
@@ -125,7 +113,6 @@ b {
     color: #DB6481;
     font-size: 16px;
     font-weight: bold;
-
 }
 
 .createProfile {
@@ -139,7 +126,6 @@ b {
     padding-bottom: 11px;
     border: none;
     border-radius: 28px;
-
 }
 
 
@@ -156,7 +142,6 @@ b {
 .leftMenu {
     float: left;
     width: 14%;
-
 }
 
 
@@ -166,7 +151,6 @@ b {
     font-size: 22px;
     font-weight: bold;
     color: black;
-
 }
 
 
@@ -272,7 +256,6 @@ b {
     height: 1570px;
     max-width: 100%;
     background-color: white;
-
 }
 
 
@@ -281,16 +264,6 @@ b {
     text-align: left;
     float: right;
 }
-
-
-.blivMedlem {
-
-}
-
-.formCreateFormMember {
-
-}
-
 
 
 
@@ -392,7 +365,6 @@ span1 {
     background-size: 40px;
     background-color: white;
     background-position-x: right;
-
 }
 
 
@@ -471,7 +443,6 @@ div div div .rabatter {
     background-color: #B2D4D0;
     font-family: Arial;
     padding-left: 300px;
-
 }
 
 /* Links inside the navbar */
@@ -488,8 +459,6 @@ div div div .rabatter {
 .dropdown {
     float: left;
     overflow: hidden;
-
-
 }
 
 /* Dropdown button */
@@ -520,7 +489,6 @@ div div div .rabatter {
     z-index: 2;
     padding-left: 310px;
     width: calc(100% - 310px);
-
 }
 
 
@@ -528,7 +496,6 @@ div div div .rabatter {
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
     display: block;
-
 }
 
 /* Create three equal columns that floats next to each other */
@@ -552,7 +519,6 @@ div div div .rabatter {
 /* Add a background color on hover */
 .column a:hover {
     background-color: #B2D4D0;
-
 }
 
 
@@ -572,7 +538,6 @@ div div div .rabatter {
     border: none;
     font-size: 10px;
     text-align: right;
-
 }
 
 
@@ -581,7 +546,6 @@ div div div .rabatter {
 
 header .navbar, .dropdown:first-child .dropbtn {
     color: #FBE5C8;
-
 }
 
 
@@ -591,12 +555,6 @@ header .navbar, .dropdown:first-child .dropbtn {
     color: #B2D4D0;
 }
 
-
-
-
-.subscribe {
-
-}
 
 .marketing {
     font-family: "Arial";
@@ -656,22 +614,18 @@ header .navbar, .dropdown:first-child .dropbtn {
     padding-bottom: 7px;
     border: none;
     border-radius: 8px;
-
 }
 
 
 .bottom1 {
     font-size: 20px;
-
 }
 
-footer .bottom1a {
-
-}
 
 
 .bottomFirstLine {
     text-align: right;
+    margin-right: 26px;
 }
 
 .bottom1a li{
@@ -683,30 +637,43 @@ footer .bottom1a {
     font-size: 16px;
 }
 
-footer .bottom2a {
 
 
-}
 
-.bottomSecondLine {
-    text-align: right;
-}
-
-.bottom2a li {
+.bottom2a li, a {
     display: inline-block;
     float: none;
 }
+
+
+.fa-stack {
+    margin-right: -25px;
+}
+
+
+.bottomSecondLine {
+    text-align: right;
+    margin-right: 40px;
+}
+
+.bottom2a .bottom2 {
+    display: inline-block;
+    float: none;
+}
+
+
 
 
 hr {
     border-top: white;
 }
 
+
 footer {
     height: auto;
     max-width: 100%;
-
 }
+
 
 .fa-stack-2x {
     font-size: 1.7em;
@@ -719,23 +686,23 @@ footer {
 
 @media only screen and (max-width: 1180px) {
     .box {
-
         top: 45%;
         left: 35%;
         width: 350px;
         height: 260px;
     }
 
+
     p {
         font-size: 10px;
         line-height: 1.8;
     }
 
+
     /* Dropdown button */
     .dropdown .dropbtn {
         font-size: 20px;
         padding: 12px 10px;
-
     }
 
 
@@ -743,6 +710,5 @@ footer {
         width: 80px;
         top: 10px;
         left: 10px;
-
     }
 }
