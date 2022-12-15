@@ -2,6 +2,7 @@ body {
     background-color: #B2D4D0;
     height: auto;
     max-width: 100%;
+    margin: 0;
 }
 
 
@@ -19,7 +20,14 @@ body {
 
 .brideGroom {
     height: auto;
-    max-width: 100%
+    max-width: 100%;
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: white;
+    z-index: 2;
 }
 
 
@@ -256,6 +264,13 @@ b {
     height: 1570px;
     max-width: 100%;
     background-color: white;
+    border-top-width: 2px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+    border-color: #B2D4D0;
+
 }
 
 
@@ -443,6 +458,7 @@ div div div .rabatter {
     background-color: #B2D4D0;
     font-family: Arial;
     padding-left: 300px;
+    margin: -8px;
 }
 
 /* Links inside the navbar */
@@ -466,29 +482,34 @@ div div div .rabatter {
     font-family: Britannic;
     font-size: 25px;
     font-weight: bold;
-    border: none;
+    border-top: white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
     outline: none;
     color: white;
     padding: 14px 16px;
     background-color: inherit;
 }
 
-/* Add a red background color to navbar links on hover */
+
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: #B2D4D0;
     color: #FBE5C8;
 }
 
+
 /* Dropdown content (hidden by default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #B2D4D0;;
+    background-color: #B2D4D0;
     left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 2;
     padding-left: 310px;
     width: calc(100% - 310px);
+    border-top: 1px solid white;
+    z-index: 3;
+    margin-top: 15px;
 }
 
 
@@ -497,6 +518,7 @@ div div div .rabatter {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 
 /* Create three equal columns that floats next to each other */
 .column {
@@ -531,13 +553,15 @@ div div div .rabatter {
 .search {
     padding-left: 25px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 20px;
     background: url(images/Magnefier.png) no-repeat left;
     background-size: 20px;
     background-color: white;
     border: none;
-    font-size: 10px;
+    font-size: 11px;
     text-align: right;
+    border-radius: 5px;
+    background-position-x: 5px;
 }
 
 
