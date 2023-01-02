@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,18 +17,16 @@
 <table class="table">
     <tr>
         <td>ID</td>
-        <td>Message</td>
-        <td>From</td>
-        <td>To</td>
+        <td>Brugernavn</td>
+        <td>Adgangskode</td>
     </tr>
 
-    <% messagesList.forEach(besked => { %>
+    <% brugerProfilList.forEach(bruger => { %>
 
         <tr>
-            <th scope="row"> <%= besked._id %> </th>
-            <td> <%= besked.message %> </td>
-            <td> <%= besked.from %> </td>
-            <td> <%= besked.to %> </td>
+            <th scope="row"> <%= bruger._id %> </th>
+            <td> <%= bruger.brugernavn %> </td>
+            <td> <%= bruger.adgangskode %> </td>
         </tr>
 
     <% }) %>

@@ -31,35 +31,24 @@ app.set('view engine', 'ejs');
 // ========================
 
 //Kodeordet skal sikres!!!
-mongoose.connect('mongodb+srv://Louise:GoPikachu78@cluster0.k9wdj.mongodb.net/messagesDB?retryWrites=true&w=majority', {useNewUrlParser: true}, {useUnifiedTopology: true});
+mongoose.connect('mongodb+srv://Louise:GoPikachu78@cluster0.k9wdj.mongodb.net/dinstorefest?retryWrites=true&w=majority', {useNewUrlParser: true}, {useUnifiedTopology: true});
 
 
 // ========================
 // Data schema
 // ========================
 
-const messagesSchema = {
-    message: String,
-    from: String,
-    to: String
+const brugerProfilerSchema = {
+    brugernavn: String,
+    adgangskode: String,
 }
 // ========================
 // Data model
 // ========================
 
-const Besked = mongoose.model('message', messagesSchema);
+const Bruger = mongoose.model('brugerProfil', brugerProfilerSchema);
 
 
-/*
-//READ
-app.get('/', (req, res) => {
-    Besked.find({}, function(err, messages) {
-        res.render('index', {
-            messagesList: messages
-        })
-    })
-})
-*/
 
 
 // ================================
@@ -67,17 +56,17 @@ app.get('/', (req, res) => {
 // ================================
 
 app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(__dirname + '/signIn.html');
 })
 
 
 //app.post
 app.post('/', function(req, res){
-    let newBesked = new Besked({
-        from: req.body.from,
-        message: req.body.message
+    let newBruger = new Bruger({
+        brugernavn: req.body.brugernavn,
+        adgangskode: req.body.adgangskode
     });
-    newBesked.save();
+    newBruger.save();
     res.redirect('/');
 })
 
