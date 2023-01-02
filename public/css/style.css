@@ -376,7 +376,7 @@ span1 {
 .kortnummer {
     padding-left: 28px;
     padding-right: 164px;
-    background: url(images/CreditCard.png) no-repeat right;
+    background: url(../../images/CreditCard.png) no-repeat right;
     background-size: 40px;
     background-color: white;
     background-position-x: 358px;
@@ -554,7 +554,7 @@ div div div .rabatter {
     padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 20px;
-    background: url(images/Magnefier.png) no-repeat left;
+    background: url(../../images/Magnefier.png) no-repeat left;
     background-size: 20px;
     background-color: white;
     border: none;
@@ -734,4 +734,31 @@ footer {
         top: 10px;
         left: 10px;
     }
+
+
+
+
+
+
+
+
+    table {
+        border:1px solid black;
+    }
+
+
+    th{
+        border:1px solid black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+
+    }
+
+
+    td {
+        border:1px solid black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 14px;
+    }
+
 }
