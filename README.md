@@ -11,3 +11,27 @@ Projektet startes ved at skrive "npm start" i terminalen, herefter vil du få be
 
 
 
+## Oversigt over kodens filer:
+
+# Følgende er sider på hjemmesiden:
+- anmeldelser.html
+- blivMedlem.html
+createProfile.html
+forside.html
+gaester.html
+glemtAdgangskode.html
+inspiration.html
+leverandoerer.html
+shop.html
+signIn.html
+vaelgNyAdgangskode.html
+velkommen.html
+
+header.html
+footer.html
+
+
+server.js
+index.html
+app.js
+
