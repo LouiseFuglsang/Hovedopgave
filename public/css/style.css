@@ -520,7 +520,7 @@ div div div .rabatter {
 }
 
 
-/* Create three equal columns that floats next to each other */
+/* Five equal columns that floats next to each other */
 .column {
     float: left;
     width: 20%;
@@ -528,7 +528,7 @@ div div div .rabatter {
     height: 250px;
 }
 
-/* Style links inside the columns */
+/* Style of links inside the columns */
 .column a {
     float: none;
     color: white;
@@ -538,7 +538,7 @@ div div div .rabatter {
     text-align: left;
 }
 
-/* Add a background color on hover */
+/* Background color on hover */
 .column a:hover {
     background-color: #B2D4D0;
 }
