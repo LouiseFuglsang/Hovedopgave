@@ -1,6 +1,6 @@
 # Hovedopgave - Din store fest hovedopgave
 
-Dette er det afsluttende projekt på datamatikeruddannelsen. \
+Dette er det afsluttende projekt på datamatikeruddannelsen.  
 Vi (Laila Annelise Andersen og Louise Fuglsang Mortensen) har valgt at lave et projekt med fokus på mockup og hertil kode en lille del/MVP.  
 Vi har valgt at kode hjemmesidens forside samt menupunkter og log ind funktionen.
 
@@ -9,8 +9,8 @@ Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 
 ![Din store fest](images/hjemmesiden.png)
 
-\
-\
+  
+  
 
 ## Oversigt over kodens filer:
 
@@ -27,10 +27,10 @@ Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 - signIn.html
 - vaelgNyAdgangskode.html
 - velkommen.html
-\
+  
 - header.html
 - footer.html
-\
+  
 
 - server.js
 - index.html
