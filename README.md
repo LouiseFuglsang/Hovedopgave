@@ -4,9 +4,9 @@ Dette er det afsluttende projekt på datamatikeruddannelsen. Vi har valgt at lav
 
 Projektet startes ved at skrive "npm start" i terminalen, herefter vil du få beskeden "Server is running on 4400". Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 
-
-
-
+\
+\
+\
 ![Din store fest](images/hjemmesiden.png)
 
 
@@ -16,16 +16,16 @@ Projektet startes ved at skrive "npm start" i terminalen, herefter vil du få be
 # Følgende er sider på hjemmesiden:
 - anmeldelser.html
 - blivMedlem.html
-createProfile.html
-forside.html
-gaester.html
-glemtAdgangskode.html
-inspiration.html
-leverandoerer.html
-shop.html
-signIn.html
-vaelgNyAdgangskode.html
-velkommen.html
+- createProfile.html
+- forside.html
+- gaester.html
+- glemtAdgangskode.html
+- inspiration.html
+- leverandoerer.html
+- shop.html
+- signIn.html
+- vaelgNyAdgangskode.html
+- velkommen.html
 
 header.html
 footer.html
