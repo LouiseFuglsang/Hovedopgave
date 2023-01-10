@@ -32,7 +32,13 @@ Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 - header.html
 - footer.html  <br><br>
 
+### server.js, app.js og index.html
 - server.js
-- index.html
 - app.js
+- index.html  <br><br>
+
+I mappen **images** finder du sidens billeder  <br>
+I mappen **public/css** finder du style.css  <br>
+I mappen **views** finder du index.ejs  
+
 
