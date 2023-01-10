@@ -26,7 +26,7 @@ Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 - shop.html
 - signIn.html
 - vaelgNyAdgangskode.html
-- velkommen.html
+- velkommen.html⋅⋅
   
 - header.html
 - footer.html
