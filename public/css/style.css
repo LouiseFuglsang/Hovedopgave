@@ -64,10 +64,6 @@ b {
     font-weight: bold;
 }
 
-.createProfileHere {
-    color: white;
-}
-
 
 
 
@@ -376,7 +372,7 @@ span1 {
 .kortnummer {
     padding-left: 28px;
     padding-right: 164px;
-    background: url(../../images/CreditCard.png) no-repeat right;
+    background: url(../images/CreditCard.png) no-repeat right;
     background-size: 40px;
     background-color: white;
     background-position-x: 358px;
@@ -554,7 +550,7 @@ div div div .rabatter {
     padding-left: 25px;
     padding-top: 10px;
     padding-bottom: 20px;
-    background: url(../../images/Magnefier.png) no-repeat left;
+    background: url(../images/Magnefier.png) no-repeat left;
     background-size: 20px;
     background-color: white;
     border: none;

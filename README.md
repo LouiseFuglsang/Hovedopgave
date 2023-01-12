@@ -7,7 +7,7 @@ Vi har valgt at kode hjemmesidens forside samt menupunkter og log ind funktionen
 Projektet startes ved at skrive "npm start" i terminalen, herefter vil du få beskeden "Server is running on 4400".  
 Gå til [localhost:4400](http://localhost:4400/) og du kan her se siden.
 
-![Din store fest](images/hjemmesiden.png)
+![Din store fest](public/images/hjemmesiden.png)
 
   
   

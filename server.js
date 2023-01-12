@@ -34,9 +34,9 @@ app.set('view engine', 'ejs');
 // ========================
 
 
-//Kodeordet skal sikres!!!
-mongoose.connect('mongodb+srv://process.env.DBUSER:process.env.DBPASS@cluster0.k9wdj.mongodb.net/dinstorefest?retryWrites=true&w=majority');
-//mongoose.connect('mongodb://127.0.0.1:27017/dinstorefest');
+//Kodeordet er sikret nu
+mongoose.connect(process.env.MONGODB_CONNECTION_URL);
+
 
 // ========================
 // Data schema
@@ -60,12 +60,19 @@ const Bruger = mongoose.model('brugerProfil', brugerProfilerSchema);
 // ================================
 
 app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/forside.html');
+})
+
+app.get('/login', function(req, res) {
     res.sendFile(__dirname + '/signIn.html');
 })
 
+app.get('/registrer', function(req, res) {
+    res.sendFile(__dirname + '/createProfile.html');
+})
 
 //app.post
-app.post('/', function(req, res){
+app.post('/login', function(req, res){
     let newBruger = new Bruger({
         brugernavn: req.body.brugernavn,
         adgangskode: req.body.adgangskode
