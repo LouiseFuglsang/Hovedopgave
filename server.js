@@ -14,9 +14,9 @@ const bodyParser = require('body-parser');
 mongoose.set('strictQuery', false);
 
 
-// ========================
+// ==========================
 // Middlewares
-// ========================
+// ==========================
 
 // Static files
 app.use(express.static('public'))
