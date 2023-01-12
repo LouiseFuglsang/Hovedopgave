@@ -581,6 +581,25 @@ div div div .rabatter {
 }
 
 
+h3 {
+    font-family: Britannic;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    color: #DB6481;
+}
+
+
+
+.underConstruction {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
 ::placeholder {
     color: #B2D4D0;
 }
