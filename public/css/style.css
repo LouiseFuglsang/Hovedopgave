@@ -474,7 +474,7 @@ div div div .rabatter {
 }
 
 /* Dropdown button */
-.dropdown .dropbtn {
+.dropdown, .btnForm:first-child .dropbtn {
     font-family: Britannic;
     font-size: 25px;
     font-weight: bold;
@@ -484,8 +484,28 @@ div div div .rabatter {
     border-right: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+    padding: 12px 10px;
     background-color: inherit;
+}
+
+/* Dropdown button */
+.dropdown, .btnForm .dropbtn {
+    font-family: Britannic;
+    font-size: 25px;
+    font-weight: bold;
+    border-top: white;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    color: white;
+    padding: 12px 10px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover, btnForm:first-child .dropbtn {
+    background-color: #B2D4D0;
+    color: #FBE5C8;
 }
 
 
@@ -559,15 +579,6 @@ div div div .rabatter {
     border-radius: 5px;
     background-position-x: 5px;
 }
-
-
-
-
-
-header .navbar, .dropdown:first-child .dropbtn {
-}
-
-
 
 
 ::placeholder {
@@ -715,13 +726,6 @@ footer {
     p {
         font-size: 10px;
         line-height: 1.8;
-    }
-
-
-    /* Dropdown button */
-    .dropdown .dropbtn {
-        font-size: 20px;
-        padding: 12px 10px;
     }
 
 
