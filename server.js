@@ -35,7 +35,7 @@ app.set('view engine', 'ejs');
 
 
 //Kodeordet er sikret nu
-mongoose.connect(process.env.MONGODB_CONNECTION_URL);
+mongoose.connect(process.env.MONGODB_CONNECTION_URL, {useNewUrlParser:true,useUnifiedTopology:true});
 
 
 // ========================
@@ -45,7 +45,15 @@ mongoose.connect(process.env.MONGODB_CONNECTION_URL);
 const brugerProfilerSchema = {
     brugernavn: String,
     adgangskode: String,
+    adgangskodeGodkend: String,
+    fuldeNavn: String,
+    email: String,
+    kortnummer: String,
+    expire: String,
+    kontrolcifre: String,
 }
+
+
 // ========================
 // Data model
 // ========================
@@ -63,7 +71,7 @@ app.get('/', function(req, res) {
     res.sendFile(__dirname + '/public/template/forside.html');
 })
 
-app.get('/login', function(req, res) {
+app.get('/logind', function(req, res) {
     res.sendFile(__dirname + '/public/template/signIn.html');
 })
 
@@ -113,10 +121,17 @@ app.get('/vaelgNyAdgangskode', function(req, res) {
 
 
 //app.post
-app.post('/login', function(req, res){
+app.post('/blivmedlem', function(req, res){
     let newBruger = new Bruger({
         brugernavn: req.body.brugernavn,
-        adgangskode: req.body.adgangskode
+        adgangskode: req.body.adgangskode,
+        adgangskodeGodkend: req.body.adgangskodeGodkend,
+        fuldeNavn: req.body.fuldeNavn,
+        email: req.body.email,
+        kortnummer: req.body.kortnummer,
+        expire: req.body.expire,
+        kontrolcifre: req.body.kontrolcifre
+
     });
     newBruger.save();
     res.redirect('/registrer');
@@ -126,7 +141,7 @@ app.post('/login', function(req, res){
 // Listen
 // ========================
 
-app.listen(4401, function(){
-    console.log("server is running on 4401");
+app.listen(4400, function(){
+    console.log("server is running on 4400");
 })
 

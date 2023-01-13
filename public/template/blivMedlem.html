@@ -39,23 +39,24 @@
           <br><br><br><br><br>
           <h2 class="blivMedlem">Bliv medlem nu for kun 49 kr/md.</h2>
           <br>
-          <form class="formCreateFormMember" action="#">
+
+          <form class="formCreateFormMember" method="post">
             <br>
             <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
             <br><br>
-            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" value="Brugernavn*">
+            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*">
 
             <br> <br> <br>
 
             <label class="labelMember" for="adgangskode">Vælg en adgangskode<span1>*</span1></label>
             <br><br>
-            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" value="Adgangskode*">
+            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*">
 
             <br> <br> <br>
 
             <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
             <br><br>
-            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskode" value="Bekræft adgangskode*">
+            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*">
 
             <div class="spacingNewPass"></div>
 
@@ -69,13 +70,13 @@
 
             <label class="labelMember" for="fuldeNavn">Navn<span1>*</span1></label>
             <br><br>
-            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" value="Navn*">
+            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" placeholder="Navn*">
 
             <br><br>
 
             <label class="labelMember" for="email">E-mail<span1>*</span1></label>
             <br><br>
-            <input class="email" type="email" id="email" name="email" value="E-mail*">
+            <input class="email" type="email" id="email" name="email" placeholder="E-mail*">
 
 
             <br><br><br>
@@ -83,20 +84,22 @@
 
             <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
             <br><br>
-            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" value="1234 1234 1234 1234*">
+            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*">
 
             <br><br>
 
 
             <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
             <br><br>
-            <input class="expire" type="text" id="expire" name="expire" value="MM / ÅÅ*">
+            <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*">
+
+
 
             <br><br>
 
             <label class="labelMember" for="kontrolcifre">Kontrolcifre (CVC)<span1>*</span1></label>
             <br><br>
-            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" value="CVC*">
+            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" placeholder="CVC*">
 
 
 
