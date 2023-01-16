@@ -115,7 +115,9 @@ app.get('/vaelgNyAdgangskode', function(req, res) {
     res.sendFile(__dirname + '/public/template/vaelgNyAdgangskode.html');
 })
 
-
+app.get('/tilmeldt', function(req, res) {
+    res.sendFile(__dirname + '/public/template/tilmeldt.html');
+})
 
 
 
