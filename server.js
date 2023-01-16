@@ -9,6 +9,10 @@ const mongoose = require('mongoose');
 const app = express();
 const ejs = require('ejs');
 const bodyParser = require('body-parser');
+//const passport = require("passport");
+//const LocalStrategy = require("passport-local");
+//const passportLocalMongoose = require("passport-local-mongoose");
+//const collection=require('./MONGODB_CONNECTION_URL');
 
 
 mongoose.set('strictQuery', false);
@@ -59,7 +63,6 @@ const brugerProfilerSchema = {
 // ========================
 
 const Bruger = mongoose.model('brugerProfil', brugerProfilerSchema);
-
 
 
 
@@ -138,6 +141,31 @@ app.post('/blivmedlem', function(req, res){
     newBruger.save();
     res.redirect('/registrer');
 })
+
+
+
+
+app.post('/logind',async (req,res )=>{
+
+    try{
+
+        const check=await Bruger.findOne({brugernavn:req.body.brugernavn})
+
+        if(check.adgangskode===req.body.adgangskode){
+            res.redirect('/velkommen')
+        }
+        else{
+            res.send('Du har indtastet en forkert adgangskode')
+        }
+
+
+    }
+    catch{
+        res.send('Brugernavnet eksisterer ikke')
+
+    }
+})
+
 
 // ========================
 // Listen
