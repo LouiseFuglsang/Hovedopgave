@@ -7,12 +7,8 @@ require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-const ejs = require('ejs');
+
 const bodyParser = require('body-parser');
-//const passport = require("passport");
-//const LocalStrategy = require("passport-local");
-//const passportLocalMongoose = require("passport-local-mongoose");
-//const collection=require('./MONGODB_CONNECTION_URL');
 
 
 mongoose.set('strictQuery', false);

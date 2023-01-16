@@ -43,14 +43,14 @@
 
         <form class="formCreateForm" method="post" >
             <br>
-            <label for="brugernavn">Brugernavn<span1>*</span1></label>
+            <label for="brugernavn" >Brugernavn<span1>*</span1></label>
             <br><br>
-            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*">
+            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" maxlength="25" required>
             <br><br><br>
             <label for="adgangskode">Adgangskode<span1>*</span1></label>
             <br><br>
 
-            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*">
+            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*" maxlength="100" required>
             <div class="spacing"></div>
 
             <input class="checkboxMark" type="checkbox" id="myCheck" onclick="checkmark()">

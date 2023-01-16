@@ -44,19 +44,19 @@
             <br>
             <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
             <br><br>
-            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*">
+            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" maxlength="25" required>
 
             <br> <br> <br>
 
             <label class="labelMember" for="adgangskode">Vælg en adgangskode<span1>*</span1></label>
             <br><br>
-            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*">
+            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*" maxlength="100" required>
 
             <br> <br> <br>
 
             <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
             <br><br>
-            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*">
+            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*" maxlength="100" required>
 
             <div class="spacingNewPass"></div>
 
@@ -70,13 +70,13 @@
 
             <label class="labelMember" for="fuldeNavn">Navn<span1>*</span1></label>
             <br><br>
-            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" placeholder="Navn*">
+            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" placeholder="Fulde navn*" maxlength="100" required>
 
             <br><br>
 
             <label class="labelMember" for="email">E-mail<span1>*</span1></label>
             <br><br>
-            <input class="email" type="email" id="email" name="email" placeholder="E-mail*">
+            <input class="email" type="email" id="email" name="email" placeholder="E-mail*" maxlength="60" required>
 
 
             <br><br><br>
@@ -84,14 +84,14 @@
 
             <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
             <br><br>
-            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*">
+            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*" maxlength="16" required>
 
             <br><br>
 
 
             <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
             <br><br>
-            <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*">
+            <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*" maxlength="4" required>
 
 
 
@@ -99,7 +99,7 @@
 
             <label class="labelMember" for="kontrolcifre">Kontrolcifre (CVC)<span1>*</span1></label>
             <br><br>
-            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" placeholder="CVC*">
+            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" placeholder="CVC*" maxlength="3" required>
 
 
 
