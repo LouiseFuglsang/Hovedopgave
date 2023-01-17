@@ -1,134 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
 
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <script
-              src="https://code.jquery.com/jquery-3.3.1.js"
-              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-              crossorigin="anonymous">
-      </script>
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous">
+  </script>
 
-    <script src="js/hf.js"> </script>
+  <script src="js/hf.js"> </script>
 
-      <title>Bliv medlem</title>
+  <script src="app.js"> </script>
 
-      <!-- Importering a Fontawsome -->
-      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" type="text/css" />
+  <title>Bliv medlem</title>
 
-      <!-- Custom Css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <!-- Importering a Fontawsome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" type="text/css" />
 
-  </head>
+  <!-- Custom Css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
 
-  <body>
+</head>
 
-      <div id="header"></div>
+<body>
 
-      <div class="contentPageMember">
-        <div class="leftMenu">
-          <p class="leftMenuText">
-            Brudeparret
-          </p>
-        </div>
+<div id="header"></div>
 
-
-        <div class="formPageMember">
-          <br><br><br><br><br>
-          <h2 class="blivMedlem">Bliv medlem nu for kun 49 kr/md.</h2>
-          <br>
-
-          <form class="formCreateFormMember" method="post">
-            <br>
-            <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
-            <br><br>
-            <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" maxlength="25" required>
-
-            <br> <br> <br>
-
-            <label class="labelMember" for="adgangskode">Vælg en adgangskode<span1>*</span1></label>
-            <br><br>
-            <input class="adgangskode" type="text" id="adgangskode" name="adgangskode" placeholder="Adgangskode*" maxlength="100" required>
-
-            <br> <br> <br>
-
-            <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
-            <br><br>
-            <input class="adgangskode" type="text" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*" maxlength="100" required>
-
-            <div class="spacingNewPass"></div>
-
-            <input class="checkboxMarkRemember" type="checkbox" id="myCheck" onclick="checkmark()">
-            <span class="huskMig">Husk mig</span>
+<div class="contentPageMember">
+  <div class="leftMenu">
+    <p class="leftMenuText">
+      Brudeparret
+    </p>
+  </div>
 
 
-            <br> <br> <br>
+  <div class="formPageMember">
+    <br><br><br><br><br>
+    <h2 class="blivMedlem">Bliv medlem nu for kun 49 kr/md.</h2>
+    <br>
+
+    <form class="formCreateFormMember" method="post" name="formBlivMedlem">
+      <br>
+      <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
+      <br><br>
+      <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" minlength="6" maxlength="100" required>
+
+      <br> <br> <br>
+
+      <label class="labelMember" for="adgangskode">Vælg en adgangskode<span1>*</span1></label>
+      <br><br>
+      <input class="adgangskode" type="password" id="adgangskode" name="adgangskode" placeholder="Adgangskode*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Din adgangskode skal mindst være 8 tegn, og skal indeholde et nummer, et stort bogstav og et lille bogstav." maxlength="100" required>
+
+      <br> <br> <br>
+
+      <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
+      <br><br>
+      <input class="adgangskode" type="password" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Din adgangskode skal mindst være 8 tegn, og skal indeholde et nummer, et stort bogstav og et lille bogstav." maxlength="100" required>
+
+      <div class="spacingNewPass"></div>
+
+      <input class="checkboxMarkRemember" type="checkbox" id="myCheck" onclick="checkmark()">
+      <span class="huskMig">Husk mig</span>
 
 
-
-            <label class="labelMember" for="fuldeNavn">Navn<span1>*</span1></label>
-            <br><br>
-            <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" placeholder="Fulde navn*" maxlength="100" required>
-
-            <br><br>
-
-            <label class="labelMember" for="email">E-mail<span1>*</span1></label>
-            <br><br>
-            <input class="email" type="email" id="email" name="email" placeholder="E-mail*" maxlength="60" required>
-
-
-            <br><br><br>
-            <h2>Indtast kortoplysninger</h2>
-
-            <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
-            <br><br>
-            <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*" maxlength="16" required>
-
-            <br><br>
-
-
-            <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
-            <br><br>
-            <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*" maxlength="4" required>
+      <br> <br> <br>
 
 
 
-            <br><br>
+      <label class="labelMember" for="fuldeNavn">Navn<span1>*</span1></label>
+      <br><br>
+      <input class="fuldeNavn" type="text" id="fuldeNavn" name="fuldeNavn" placeholder="Fulde navn*" maxlength="100" required>
 
-            <label class="labelMember" for="kontrolcifre">Kontrolcifre (CVC)<span1>*</span1></label>
-            <br><br>
-            <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" placeholder="CVC*" maxlength="3" required>
+      <br><br>
 
-
-
-            <div class="data">Læs om vores<a class="dataLink" href="#">håndtering af persondata her</a>
-            </div>
-
-            <div class="dataMember">Læs om de<a class="dataMemberLink" href="#">gældende medlemsvilkår for Din store fest her</a>
-            </div>
-
-            <br>
-
-            <input class="checkboxAccept" type="checkbox" id="myCheck2" onclick="checkmark()">
-            <span class="accept">Jeg har læst og accepteret webshoppens Vilkår og betingelser*</span>
+      <label class="labelMember" for="email">E-mail<span1>*</span1></label>
+      <br><br>
+      <input class="email" type="email" id="email" name="email" placeholder="E-mail*" maxlength="60" required>
 
 
+      <br><br><br>
+      <h2>Indtast kortoplysninger</h2>
 
-            <br> <br>
+      <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
+      <br><br>
+      <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*" minlength="16" maxlength="16" title="MasterCard er på 16 tal. Det starter med 50, 51, 52, 53 54 eller 55." required>
 
-            <input class="submitMember49kr" type="submit" value="Bliv medlem 49,- kr.">
-          </form>
+      <br><br>
 
-        </div>
+      <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
+      <br><br>
+      <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*" minlength="4" maxlength="4" required>
 
+
+
+      <br><br>
+
+      <label class="labelMember" for="kontrolcifre">Kontrolcifre (CVC)<span1>*</span1></label>
+      <br><br>
+      <input class="kontrolcifre" type="text" id="kontrolcifre" name="kontrolcifre" placeholder="CVC*" minlength="3" maxlength="3" required>
+
+
+
+      <div class="data">Læs om vores<a class="dataLink" href="/persondata">håndtering af persondata her</a>
       </div>
 
-
-      <div id="footer">
+      <div class="dataMember">Læs om de<a class="dataMemberLink" href="/medlemsvilkaar">gældende medlemsvilkår for Din store fest her</a>
       </div>
 
+      <br>
 
-  </body>
+      <input class="checkboxAccept" type="checkbox" id="myCheck2" onclick="checkmark()" required>
+      <span class="accept">Jeg har læst og accepteret webshoppens Vilkår og betingelser*</span>
+
+
+
+      <br> <br>
+
+      <input class="submitMember49kr" type="submit" value="Bliv medlem 49,- kr." >
+    </form>
+
+  </div>
+
+</div>
+
+
+<div id="footer">
+</div>
+
+
+</body>
 </html>

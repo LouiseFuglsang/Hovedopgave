@@ -118,6 +118,13 @@ app.get('/tilmeldt', function(req, res) {
     res.sendFile(__dirname + '/public/template/tilmeldt.html');
 })
 
+app.get('/persondata', function(req, res) {
+    res.sendFile(__dirname + '/public/template/persondata.html');
+})
+
+app.get('/medlemsvilkaar', function(req, res) {
+    res.sendFile(__dirname + '/public/template/medlemsvilkaar.html');
+})
 
 
 
