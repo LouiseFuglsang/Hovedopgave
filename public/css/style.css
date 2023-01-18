@@ -221,6 +221,11 @@ b {
 }
 
 
+.adgangskode[type=password] {
+    text-align:left;
+}
+
+
 .email {
     padding-right: 156px;
     padding-left: 30px;

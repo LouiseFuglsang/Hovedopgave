@@ -1,3 +1,7 @@
+console.log('Hejsa');
+
+
+
 //////////////////////////
 function checkmark() {
     var checkBox = document.getElementById("myCheck");
@@ -84,7 +88,7 @@ function checkPassword(form) {
 
     // Hvis adgangskodefeltet ikke er udfyldt
     if (adgangskode == '')
-        alert ("Please enter Password");
+        alert ("Indtast adgangskode");
 
     // Hvis Bekræft adgangskodefeltet ikke er udfyldt
     else if (adgangskodeGodkend == '')
