@@ -136,8 +136,10 @@ app.post('/blivmedlem', function(req, res){
         adgangskodeGodkend: req.body.adgangskodeGodkend,
         fuldeNavn: req.body.fuldeNavn,
         email: req.body.email,
+        kortholder: req.body.kortholder,
         kortnummer: req.body.kortnummer,
-        expire: req.body.expire,
+        expireMonth: req.body.expireMonth,
+        expireYear: req.body.expireYear,
         kontrolcifre: req.body.kontrolcifre
 
     });

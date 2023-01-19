@@ -46,7 +46,7 @@
       <br>
       <label class="labelMember" for="brugernavn">Brugernavn<span1>*</span1></label>
       <br><br>
-      <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" minlength="6" maxlength="100" required>
+      <input class="brugernavn" type="text" id="brugernavn" name="brugernavn" placeholder="Brugernavn*" minlength="5" maxlength="100" required>
 
       <br> <br> <br>
 
@@ -58,7 +58,7 @@
 
       <label class="labelMember" for="adgangskode">Bekræft adgangskode<span1>*</span1></label>
       <br><br>
-      <input class="adgangskode" type="password" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Din adgangskode skal mindst være 8 tegn, og skal indeholde et nummer, et stort bogstav og et lille bogstav." maxlength="100" required>
+      <input class="adgangskode" type="password" onchange="checkPassword(form)" id="adgangskode2" name="adgangskodeGodkend" placeholder="Bekræft adgangskode*" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Din adgangskode skal mindst være 8 tegn, og skal indeholde et nummer, et stort bogstav og et lille bogstav." maxlength="100" required>
 
       <div class="spacingNewPass"></div>
 
@@ -84,17 +84,28 @@
       <br><br><br>
       <h2>Indtast kortoplysninger</h2>
 
+
+      <label class="labelMember" for="kortholder">Navn på kortholder<span1>*</span1></label>
+      <br><br>
+      <input class="kortholder" type="text" id="kortholder" name="kortholder" placeholder="Kortholders navn*" minlength="2" maxlength="60" required>
+
+      <br><br>
+
       <label class="labelMember" for="kortnummer">Kortnummer<span1>*</span1></label>
       <br><br>
       <input class="kortnummer" type="text" id="kortnummer" name="kortnummer" placeholder="1234 1234 1234 1234*" minlength="16" maxlength="16" title="MasterCard er på 16 tal. Det starter med 50, 51, 52, 53 54 eller 55." required>
 
       <br><br>
 
-      <label class="labelMember" for="expire">Udløbsdato<span1>*</span1></label>
+
+      <label class="labelMember" for="expireMonth">Udløbsmåned<span1>*</span1></label>
       <br><br>
-      <input class="expire" type="text" inputmode="numeric" id="expire" name="expire" placeholder="MM / ÅÅ*" minlength="4" maxlength="4" required>
+      <input class="expire" type="number" id="expireMonth" name="expire" placeholder="MM*" min="1" max="12" required>
+      <br><br>
 
-
+      <label class="labelMember" for="expireYear">Udløbsår<span1>*</span1></label>
+      <br><br>
+      <input class="expire" type="number" id="expireYear" name="expire" placeholder="ÅÅ*" min="0" max="99" required>
 
       <br><br>
 
@@ -122,10 +133,11 @@
       <input class="submitMember49kr" type="submit" value="Bliv medlem 49,- kr." >
     </form>
 
+
+
   </div>
 
 </div>
-
 
 <div id="footer">
 </div>

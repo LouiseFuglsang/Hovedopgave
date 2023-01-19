@@ -268,7 +268,7 @@ b {
 
 
 .contentPageMember {
-    height: 1570px;
+    height: 1800px;
     max-width: 100%;
     background-color: white;
     border-top-width: 2px;
@@ -379,6 +379,10 @@ span1 {
     padding-left: 83px;
 }
 
+.kortholder {
+    padding-left: 28px;
+    padding-right: 164px;
+}
 
 .kortnummer {
     padding-left: 28px;
