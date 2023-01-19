@@ -1,21 +1,35 @@
 
-function sanitizeUser(user) {
-
-}
+function validateUser(user) {
 
 
-function sanitizePasswords(pass1, pass2) {
-    if(pass1 === pass2 && pass1.match(lowerCaseLetters) && pass1.match(uppercaseLetters) && pass1.match(numbers) && pass1.length >= 8) {
+    function validateUsername(brugernavn) {
+
+            if(!(check.brugernavn===req.body.brugernavn) && brugernavn.length >= 5){
+
+                return;
+            }
+    }
+
+
+
+function validatePasswords(adgangskode, adgangskode2) {
+    if(adgangskode === adgangskode2 && adgangskode.match(lowerCaseLetters) && adgangskode.match(uppercaseLetters) && adgangskode.match(numbers) && adgangskode.length >= 5) {
+        alert('Noget gik galt');
+    }
+        else
+    {
         return;
     }
 }
+}
+
+
+/*
+
 
 
 function checkPassword(form) {
 
 }
 
-
-function checkPassword(form) {
-
-}
+*/

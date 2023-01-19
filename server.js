@@ -48,8 +48,10 @@ const brugerProfilerSchema = {
     adgangskodeGodkend: String,
     fuldeNavn: String,
     email: String,
+    kortholder: String,
     kortnummer: String,
-    expire: String,
+    expireMonth: Number,
+    expireYear: Number,
     kontrolcifre: String,
 }
 
