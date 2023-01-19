@@ -7,8 +7,10 @@ require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
-
 const bodyParser = require('body-parser');
+
+//password encrypt
+const bcrypt = require('bcryptjs');
 
 
 mongoose.set('strictQuery', false);
@@ -131,11 +133,11 @@ app.get('/medlemsvilkaar', function(req, res) {
 
 
 //app.post
-app.post('/blivmedlem', function(req, res){
+app.post('/blivmedlem', function(req, res) {
     let newBruger = new Bruger({
         brugernavn: req.body.brugernavn,
         adgangskode: req.body.adgangskode,
-        adgangskodeGodkend: req.body.adgangskodeGodkend,
+
         fuldeNavn: req.body.fuldeNavn,
         email: req.body.email,
         kortholder: req.body.kortholder,
@@ -145,11 +147,25 @@ app.post('/blivmedlem', function(req, res){
         kontrolcifre: req.body.kontrolcifre
 
     });
-    newBruger.save();
-    res.redirect('/registrer');
+
+
+    //hash pw (use bcrypt)
+    bcrypt.genSalt(10, (err, salt) => {
+        bcrypt.hash(newBruger.adgangskode, salt, (err, hash) => {
+            if (err) throw err;
+            //Set pw to hashed
+            newBruger.adgangskode = hash;
+            //save users to DB
+            newBruger.save() //when user get saved db
+                .then(user => { //give us promise
+
+                    newBruger.save();
+                    res.redirect('/registrer');
+                })
+                .catch(err => console.log(err));
+        });
+    });
 })
-
-
 
 
 app.post('/logind',async (req,res )=>{
@@ -164,7 +180,6 @@ app.post('/logind',async (req,res )=>{
         else{
             res.send('Du har indtastet en forkert adgangskode')
         }
-
 
     }
     catch{
