@@ -8,6 +8,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const app = express();
 const bodyParser = require('body-parser');
+const saltRounds = 10;
 
 //password encrypt
 const bcrypt = require('bcryptjs');
@@ -111,7 +112,9 @@ app.get('/shop', function(req, res) {
 })
 
 app.get('/velkommen', function(req, res) {
-    res.sendFile(__dirname + '/public/template/velkommen.html');
+    let user = "Get user info from session";
+    res.render('welcome', { user: user});
+
 })
 
 app.get('/vaelgNyAdgangskode', function(req, res) {
@@ -149,11 +152,11 @@ app.post('/blivmedlem', function(req, res) {
     });
 
 
-    //hash pw (use bcrypt)
+    //hash adgangskode (use bcrypt)
     bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(newBruger.adgangskode, salt, (err, hash) => {
             if (err) throw err;
-            //Set pw to hashed
+            //Set adgangskode to hashed
             newBruger.adgangskode = hash;
             //save users to DB
             newBruger.save() //when user get saved db
@@ -168,13 +171,122 @@ app.post('/blivmedlem', function(req, res) {
 })
 
 
-app.post('/logind',async (req,res )=>{
 
-    try{
 
-        const check=await Bruger.findOne({brugernavn:req.body.brugernavn})
+/*
+function generateHash(password: string) {
+    const salt = bcrypt.genSaltSync(10);
+    const hash = bcrypt.hashSync(password, salt);
+    return hash;
+}
 
-        if(check.adgangskode===req.body.adgangskode){
+function compareHash(password: string, hashed: string) {
+    return bcrypt.compareSync(password, hashed);
+}
+
+console.log(compareHash('password123', dsfdfgfdhgf));
+*/
+
+
+
+
+
+
+app.post('/logind',async (req,res ) => {
+
+
+    let password;
+    let hash;
+    try {
+
+        const check = await Bruger.findOne({brugernavn: req.body.brugernavn});
+        if (check) {
+            password = req.body.adgangskode;
+            hash = check.adgangskode
+
+            const match = await bcrypt.compare(password, hash);
+
+            if (match){
+                // Set session var (brugernavn osv...)
+                res.redirect('/velkommen')
+            } else {
+                res.send('Fejl ved login, prøv igen.');
+            }
+
+        } else {
+            res.send('Bruger ikke fundet!')
+        }
+
+    } catch {
+        res.send('Login fejlede, hvis fejlen fortsætter så kontakt support.')
+
+    }
+})
+
+
+ /*       const insertResult = await Bruger.create({
+            brugernavn: req.body.brugernavn,
+            adgangskode: hashedAdgangskode,
+        });
+*/
+
+
+        /*
+        if (Bruger) {
+            const cmp = await bcrypt.compare(req.body.adgangskode, hashedAdgangskode);
+            if (cmp) {
+                //   ..... further code to maintain authentication like jwt or sessions
+                res.send("Auth Successful");
+            } else {
+                res.send("Wrong username or password.");
+            }
+        } else {
+            res.send("Wrong username or password.");
+        }
+    } catch (error) {
+        console.log(error);
+        res.status(500).send("Internal Server error Occured");
+    }
+});
+
+*/
+
+
+/*
+        brugernavn.get(adgangskode)
+
+        function compareHash(password: string, hashed: string) {
+            return bcrypt.compareSync(password, hashed);
+        }
+
+        console.log(compareHash('password123', fdsdfdsxg))
+
+
+
+        // check account found and verify password
+        if (!brugerProfil || !bcrypt.compareSync(adgangskode, check.adgangskode)) {
+            // authentication failed
+            return false;
+        } else {
+            // authentication successful
+            return true;
+        }
+    }
+
+
+        //hash pw (use bcrypt)
+        bcrypt.genSalt(10, (err, salt) => {
+            bcrypt.hash(adgangskode, salt, (err, hash) => {
+                if (err) throw err;
+                //Set pw to hashed
+                adgangskode = hash;
+                    })
+                    .catch(err => console.log(err));
+            });
+
+
+
+        if(check.hash===req.body.adgangskode){
             res.redirect('/velkommen')
         }
         else{
@@ -187,6 +299,11 @@ app.post('/logind',async (req,res )=>{
 
     }
 })
+
+*/
+
+
+
 
 
 // ========================
