@@ -22,14 +22,3 @@ function validatePasswords(adgangskode, adgangskode2) {
     }
 }
 }
-
-
-/*
-
-
-
-function checkPassword(form) {
-
-}
-
-*/

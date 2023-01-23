@@ -1,8 +1,4 @@
-console.log('Hejsa');
 
-
-
-//////////////////////////
 function checkmark() {
     var checkBox = document.getElementById("myCheck");
     var text = document.getElementById("text");

@@ -1,7 +1,3 @@
-//npm init (danner package.json)
-//npm i express mongoose (danner package-lock.json)
-//cd til rette mappe
-//node server.js (eller nodemon server.js)
 
 require("dotenv").config();
 const express = require('express');
@@ -36,8 +32,6 @@ app.set('view engine', 'ejs');
 // Connection to mongoDB
 // ========================
 
-
-//Kodeordet er sikret nu
 mongoose.connect(process.env.MONGODB_CONNECTION_URL, {useNewUrlParser:true,useUnifiedTopology:true});
 
 
@@ -68,7 +62,7 @@ const Bruger = mongoose.model('brugerProfil', brugerProfilerSchema);
 
 
 // ================================
-// Routes/Read route / handlers
+// Routes/Read route
 // ================================
 
 app.get('/', function(req, res) {
@@ -113,8 +107,7 @@ app.get('/shop', function(req, res) {
 
 app.get('/velkommen', function(req, res) {
     let user = "Get user info from session";
-    res.render('welcome', { user: user});
-
+    res.render('velkommen', { user: user});
 })
 
 app.get('/vaelgNyAdgangskode', function(req, res) {
@@ -140,7 +133,6 @@ app.post('/blivmedlem', function(req, res) {
     let newBruger = new Bruger({
         brugernavn: req.body.brugernavn,
         adgangskode: req.body.adgangskode,
-
         fuldeNavn: req.body.fuldeNavn,
         email: req.body.email,
         kortholder: req.body.kortholder,
@@ -148,11 +140,10 @@ app.post('/blivmedlem', function(req, res) {
         expireMonth: req.body.expireMonth,
         expireYear: req.body.expireYear,
         kontrolcifre: req.body.kontrolcifre
-
     });
 
 
-    //hash adgangskode (use bcrypt)
+    //hash adgangskode
     bcrypt.genSalt(10, (err, salt) => {
         bcrypt.hash(newBruger.adgangskode, salt, (err, hash) => {
             if (err) throw err;
@@ -173,27 +164,7 @@ app.post('/blivmedlem', function(req, res) {
 
 
 
-/*
-function generateHash(password: string) {
-    const salt = bcrypt.genSaltSync(10);
-    const hash = bcrypt.hashSync(password, salt);
-    return hash;
-}
-
-function compareHash(password: string, hashed: string) {
-    return bcrypt.compareSync(password, hashed);
-}
-
-console.log(compareHash('password123', dsfdfgfdhgf));
-*/
-
-
-
-
-
-
 app.post('/logind',async (req,res ) => {
-
 
     let password;
     let hash;
@@ -224,87 +195,6 @@ app.post('/logind',async (req,res ) => {
 })
 
 
- /*       const insertResult = await Bruger.create({
-            brugernavn: req.body.brugernavn,
-            adgangskode: hashedAdgangskode,
-        });
-*/
-
-
-        /*
-        if (Bruger) {
-            const cmp = await bcrypt.compare(req.body.adgangskode, hashedAdgangskode);
-            if (cmp) {
-                //   ..... further code to maintain authentication like jwt or sessions
-                res.send("Auth Successful");
-            } else {
-                res.send("Wrong username or password.");
-            }
-        } else {
-            res.send("Wrong username or password.");
-        }
-    } catch (error) {
-        console.log(error);
-        res.status(500).send("Internal Server error Occured");
-    }
-});
-
-*/
-
-
-/*
-        brugernavn.get(adgangskode)
-
-        function compareHash(password: string, hashed: string) {
-            return bcrypt.compareSync(password, hashed);
-        }
-
-        console.log(compareHash('password123', fdsdfdsxg))
-
-
-
-        // check account found and verify password
-        if (!brugerProfil || !bcrypt.compareSync(adgangskode, check.adgangskode)) {
-            // authentication failed
-            return false;
-        } else {
-            // authentication successful
-            return true;
-        }
-    }
-
-
-        //hash pw (use bcrypt)
-        bcrypt.genSalt(10, (err, salt) => {
-            bcrypt.hash(adgangskode, salt, (err, hash) => {
-                if (err) throw err;
-                //Set pw to hashed
-                adgangskode = hash;
-                    })
-                    .catch(err => console.log(err));
-            });
-
-
-
-        if(check.hash===req.body.adgangskode){
-            res.redirect('/velkommen')
-        }
-        else{
-            res.send('Du har indtastet en forkert adgangskode')
-        }
-
-    }
-    catch{
-        res.send('Brugernavnet eksisterer ikke')
-
-    }
-})
-
-*/
-
-
-
-
 
 // ========================
 // Listen
@@ -313,4 +203,3 @@ app.post('/logind',async (req,res ) => {
 app.listen(4400, function(){
     console.log("server is running on 4400");
 })
-
